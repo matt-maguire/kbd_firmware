@@ -1,3 +1,12 @@
+# Corne v4 firmware with local customisations
+
+This is a fork of the official repo for Corne keyboard firmware. Under
+this "custom" branch I track tweaks I make to the firmware as well as
+the keyboard layouts I am using.
+
+For copies of the Vial layout files, see the folder:
+`keyboards/crkbd/vial-kb`
+
 # KBD firmware
 
 ## How to build
