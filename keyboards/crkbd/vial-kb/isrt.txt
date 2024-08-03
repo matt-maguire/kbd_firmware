@@ -1,0 +1,21 @@
+ortho:
+y c l m k    z f u , '
+i s r t g    p n e a o ;
+q v w d j    b h / . x
+
+ansi:
+y c l m k z f u , '
+ i s r t g p n e a o ;
+  q v w d j b h / . x
+
+ansi (angle mod):
+y c l m k z f u , '
+ i s r t g p n e a o ;
+  v w d j q b h / . x
+
+ansi (wide angle mod):
+` 1 2 3 4 5 6 \ 7 8 9 0 =  ⌫
+↹  y c l m k [ z f u , ' - ;
+⇪⇪  i s r t g ] p n e a o  ⏎
+⇧⇧⇧  v w d j q x b h / . ⇧⇧⇧
+
