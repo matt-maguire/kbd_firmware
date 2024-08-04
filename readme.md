@@ -59,3 +59,22 @@ kb=crkbd kr=rev4_1/mini km=vial_mini make vial-qmk-compile
 ```sh
 make update-al
 ```
+## 4. Flash the firmware
+
+For Vial firmware on my Corne keyboards I use:
+```sh
+kb=crkbd kr=rev4_0/standard km=vial make vial-qmk-flash
+```
+or
+```sh
+kb=crkbd kr=rev4_1/mini km=vial_mini make vial-qmk-flash
+```
+
+**Note 1:** be sure to save any custom keymap using the Vial GUI, as it will be destroyed by the flashing process.
+
+**Note 2:** on my Linux system, the flash command just sits there waiting for the board to present a USB drive. I need to click on the board's drive in the Thunar file manager in order for the flash process to see it.
+
+**Note 3:** if you can't unlock the board to put it in bootloader mode (eg. if the unlock keys are mapped to the wrong place) then you might be able to put it in bootloader mode by double-tapping the *reset* button on the circuit board itself.
+
+## 5. Load a keymap
+By default after flashing the keyboard will have a qwerty keymap. You can load a better keymap using the Vial GUI. My Vial keymaps are stored here in github in the `keyboards/crkbd/vial-kb/` directory.
