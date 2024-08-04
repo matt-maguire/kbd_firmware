@@ -43,6 +43,18 @@ kb=crkbd kr=rev4/standard km=vial make vial-qmk-compile
 A built data will be stored on `keyboards/crkbd/vial-kb/vial-qmk/.build`\
 Please change `kb`, `kr` and `km` when build other.
 
+For example, in my case I am using:
+
+#### Corne v4 rev 4.0 board
+```sh
+kb=crkbd kr=rev4_0/standard km=vial make vial-qmk-compile
+```
+
+#### Corne v4 mini rev 4.1 board
+```sh
+kb=crkbd kr=rev4_1/mini km=vial_mini make vial-qmk-compile
+```
+
 ### All cleaning and building
 ```sh
 make update-al
