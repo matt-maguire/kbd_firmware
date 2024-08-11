@@ -1,7 +1,7 @@
-#+title: Custom "Ben Vallack" Layout
+#+title: Corne v4 "Homerow Layers" Layout
 #+author: Matt Maguire
 
-* Current Layout on Corne v4, based on Ben Vallack's 34-key layout
+* Corne v4 Layout with Homerow Layer Keys
 
 Another layout inspired by Ben Vallack, this time from his video on the ZSA Voyager. On that keyboard,
 he ditched the sticky layers due to the cognitive load needed to keep track of the active layer and
