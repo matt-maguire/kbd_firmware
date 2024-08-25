@@ -1,18 +1,37 @@
 #include QMK_KEYBOARD_H
 
+#define HMOD_C LCTL_T(KC_C)
+#define HMOD_L LALT_T(KC_L)
+#define HMOD_M LGUI_T(KC_M)
+#define HMOD_F RGUI_T(KC_F)
+#define HMOD_U LALT_T(KC_U)
+#define HMODCM RCTL_T(KC_COMM)
+#define HMOD_S LT(3,KC_S)
+#define HMOD_R LT(1,KC_R)
+#define HMOD_T LT(2,KC_T)
+#define HMOD_N LT(2,KC_N)
+#define HMOD_E LT(1,KC_E)
+#define HMOD_A LT(3,KC_A)
+#define HMOD_Q RALT_T(KC_Q)
+#define HMOD_X RALT_T(KC_X)
+#define TH_LALT OSM(MOD_LALT)
+#define TH_LSFT OSM(MOD_LSFT)
+#define TH_RCTL OSM(MOD_RCTL)
+#define TH_RGUI OSM(MOD_RGUI)
 
 #ifdef LAYOUT_split_3x6_3_ex2
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_split_3x6_3_ex2(
-  //,----------------------------------------------------------------------------------------.  ,--------------------------------------------------------------------------------------------------.
-      KC_CAPS,         KC_Y, LCTL_T(KC_C), LALT_T(KC_L), LGUI_T(KC_M),    KC_K,         MO(4),            MO(4),          KC_Z,  RGUI_T(KC_F), LALT_T(KC_U), RCTL_T(KC_COMM),      KC_QUOT, KC_SCLN,
-  //|--------+-------------+-------------+-------------+-------------+--------+--------------|  |--------------+--------------+--------------+-------------+----------------+-------------+--------|
-      KC_BSPC,         KC_I,   LT(3,KC_S),   LT(1,KC_R),   LT(2,KC_T),    KC_G,       XXXXXXX,          XXXXXXX,          KC_P,    LT(2,KC_N),   LT(1,KC_E),      LT(3,KC_A),         KC_O,  KC_EQL,
-  //|--------+-------------+-------------+-------------+-------------+--------+--------------'  `--------------+--------------+--------------+-------------+----------------+-------------+--------|
-      KC_QUES, RALT_T(KC_Q),         KC_V,         KC_W,         KC_D,    KC_J,                                           KC_B,          KC_H,      KC_SLSH,          KC_DOT, RALT_T(KC_X), KC_EXLM,
-  //|--------+-------------+-------------+-------------+--------------+-------+--------------.  ,--------------+--------------+--------------+-------------+----------------+-------------+--------|
-                                                         OSM(MOD_LALT), KC_SPC, OSM(MOD_LSFT),    OSM(MOD_RCTL), OSM(MOD_RGUI), OSM(MOD_LALT)
-                                                     //`-------------------------------------'  `--------------------------------------------'
+  //,--------------------------------------------------------------.  ,--------------------------------------------------------------.
+      KC_CAPS,    KC_Y,  HMOD_C,  HMOD_L,  HMOD_M,    KC_K,   MO(4),      MO(4),    KC_Z,  HMOD_F,  HMOD_U,  HMODCM, KC_QUOT, KC_SCLN,
+  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+       KC_TAB,    KC_I,  HMOD_S,  HMOD_R,  HMOD_T,    KC_G, XXXXXXX,    XXXXXXX,    KC_P,  HMOD_N,  HMOD_E,  HMOD_A,    KC_O,  KC_EQL,
+  //|--------+--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+--------+--------|
+      KC_QUES,  HMOD_Q,    KC_V,    KC_W,    KC_D,    KC_J,                         KC_B,    KC_H, KC_SLSH,  KC_DOT,  HMOD_X, KC_EXLM,
+  //|--------+--------+--------+--------+--------+--------+--------.  ,--------+--------+--------+--------+--------+--------+--------|
+                                          TH_LALT,  KC_SPC, TH_LSFT,    TH_RCTL, TH_RGUI, TH_LALT
+                                      //`--------------------------'  `--------------------------'
+
   ),
 
   [1] = LAYOUT_split_3x6_3_ex2(
@@ -29,11 +48,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [2] = LAYOUT_split_3x6_3_ex2(
   //,--------------------------------------------------------------.  ,--------------------------------------------------------------.
-      _______,  KC_ESC, KC_AMPR, KC_ASTR, KC_SLSH, KC_COLN, _______,    _______, KC_COMM, KC_LCBR, KC_RCBR,  KC_GRV, KC_BSPC, _______,
+      _______,  KC_ESC, KC_AMPR, KC_ASTR, KC_SLSH, KC_COLN, _______,    _______, KC_PIPE, KC_LCBR, KC_RCBR,  KC_GRV, KC_BSPC, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
       _______,  KC_TAB,  KC_DLR, KC_PERC, KC_CIRC, KC_UNDS, _______,    _______, KC_BSLS, KC_LPRN, KC_RPRN,  KC_EQL,  KC_ENT, _______,
   //|--------+--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+--------+--------|
-      _______, KC_CAPS, KC_EXLM,   KC_AT, KC_HASH, KC_SCLN,                      KC_PIPE, KC_LBRC, KC_RBRC, KC_TILD,  KC_DEL, _______,
+      _______, KC_CAPS, KC_EXLM,   KC_AT, KC_HASH, KC_SCLN,                      CW_TOGG, KC_LBRC, KC_RBRC, KC_TILD,  KC_DEL, _______,
   //|--------+--------+--------+--------+--------+--------+--------.  ,--------+--------+--------+--------+--------+--------+--------|
                                           _______, _______, _______,    _______, _______, _______
                                       //`--------------------------'  `--------------------------'
