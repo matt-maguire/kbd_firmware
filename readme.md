@@ -7,6 +7,9 @@ the keyboard layouts I am using.
 For copies of the Vial layout files, see the folder:
 `keyboards/crkbd/vial-kb`
 
+For a GUI representation of the similar keymap I use on my ZSA Voyager keyboard, see:
+https://configure.zsa.io/voyager/layouts/jYDdw/latest/0
+
 # KBD firmware
 
 ## How to build
@@ -47,12 +50,12 @@ For example, in my case I am using:
 
 #### Corne v4 rev 4.0 board
 ```sh
-kb=crkbd kr=rev4_0/standard km=vial make vial-qmk-compile
+kb=crkbd kr=rev4_0/standard km=vial_custom make vial-qmk-compile
 ```
 
 #### Corne v4 mini rev 4.1 board
 ```sh
-kb=crkbd kr=rev4_1/mini km=vial_mini make vial-qmk-compile
+kb=crkbd kr=rev4_1/mini km=vial_mini_custom make vial-qmk-compile
 ```
 
 ### All cleaning and building
@@ -63,11 +66,11 @@ make update-al
 
 For Vial firmware on my Corne keyboards I use:
 ```sh
-kb=crkbd kr=rev4_0/standard km=vial make vial-qmk-flash
+kb=crkbd kr=rev4_0/standard km=vial_custom make vial-qmk-flash
 ```
 or
 ```sh
-kb=crkbd kr=rev4_1/mini km=vial_mini make vial-qmk-flash
+kb=crkbd kr=rev4_1/mini km=vial_mini_custom make vial-qmk-flash
 ```
 
 **Note 1:** be sure to save any custom keymap using the Vial GUI, as it will be destroyed by the flashing process.
