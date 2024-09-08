@@ -60,7 +60,7 @@ kb=crkbd kr=rev4_1/mini km=vial_mini_custom make vial-qmk-compile
 
 ### All cleaning and building
 ```sh
-make update-al
+make update-all
 ```
 ## 4. Flash the firmware
 
