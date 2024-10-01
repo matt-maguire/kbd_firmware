@@ -1,7 +1,8 @@
 Gallium Ortho:
 
-  b l d w v  j y o u ,
-  n r t s g  p h a e i
+` 6 7 8 9 0  1 2 3 4 5 \
+  b l d w v  j y o u , -
+  n r t s g  p h a e i /
   q x m c z  k f ' ; .
 
 
