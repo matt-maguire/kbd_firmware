@@ -1,10 +1,17 @@
 Gallium Ortho:
 
-` 6 7 8 9 0  1 2 3 4 5 \
-  b l d w v  j y o u , -
-  n r t s g  p h a e i /
-  q x m c z  k f ' ; .
+`  6  7  8  9  0   1  2  3  4  5  \
+   b  l  d  c  v   j  y  o  u  ,  -
+   n  r  t  s  g   p  h  a  e  i  /
+   q  x  m  w  z   k  f  '  ;  .
+        LA SP LC   RS RG RA
 
+Notes:
+- LA=Left Alt; SP=Space; LC=Left Ctl
+- RS=Right Shift; RG=Right GUI; RA=Right Alt
+- Q & X are swapped from standard Gallium; this makes
+  it easier to use Emacs on an angle-modded keyboard
+  and moves the destructive Q shortcut out of the way.
 
 Gallium ANSI angle:
 
