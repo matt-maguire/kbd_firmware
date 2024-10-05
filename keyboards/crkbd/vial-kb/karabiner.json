@@ -111,8 +111,7 @@
                     "ignore": true
                 }
             ],
-            "name": "Default profile",
-            "selected": true
+            "name": "Default profile"
         },
         { "name": "Disabled" },
         {
@@ -432,7 +431,7 @@
                                     "key_code": "r",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "w" }],
+                                "to": [{ "key_code": "c" }],
                                 "type": "basic"
                             },
                             {
@@ -504,7 +503,7 @@
                                     "key_code": "u",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "f" }],
+                                "to": [{ "key_code": "y" }],
                                 "type": "basic"
                             },
                             {
@@ -768,7 +767,7 @@
                                     "key_code": "h",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "y" }],
+                                "to": [{ "key_code": "p" }],
                                 "type": "basic"
                             },
                             {
@@ -888,7 +887,7 @@
                                     "key_code": "quote",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "slash" }],
+                                "to": [{ "key_code": "semicolon" }],
                                 "type": "basic"
                             },
                             {
@@ -960,7 +959,7 @@
                                     "key_code": "c",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "c" }],
+                                "to": [{ "key_code": "w" }],
                                 "type": "basic"
                             },
                             {
@@ -1104,7 +1103,7 @@
                                     "key_code": "period",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "semicolon" }],
+                                "to": [{ "key_code": "slash" }],
                                 "type": "basic"
                             },
                             {
@@ -2133,7 +2132,8 @@
                     "ignore": true
                 }
             ],
-            "name": "CA Gallium with Extend"
+            "name": "CA Gallium with Extend",
+            "selected": true
         },
         {
             "complex_modifications": {
