@@ -1,0 +1,28 @@
+Graphite Ortho:
+
+Voyager 6x4:
+
+CW 1! 2@ 3# 4$ 5%  6^ 7& 8* 9( 0) =+
+`~ b  l  d  w  z   '_ y  o  u  j  ;:
+\| n  r  t  s  g   p  h  a  e  i  ,
+LA q  x  m  c  v   k  f  .> -" /< RA
+            SP LC  RS RG
+
+Corne 6x3:
+
+`~ b  l  d  w  z   '_ y  o  u  j  ;:
+\| n  r  t  s  g   p  h  a  e  i  ,
+CW q  x  m  c  v   k  f  .> -" /< =+
+         LA SP LC  RS RG RA
+
+Notes:
+- LA=Left Alt; SP=Space; LC=Left Ctl
+- RS=Right Shift; RG=Right GUI; RA=Right Alt
+- Symbols _ > " < are held rather than shifted to avoid the need for key overrides
+
+Graphite ANSI angle:
+
+` 1 2 3 4 5 6 7 8 9 0 = [
+   b l d w v ' y o u j - ] \
+    n r t s g p h a e i ,
+     x m c z q k f . - /
