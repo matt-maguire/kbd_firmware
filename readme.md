@@ -10,6 +10,9 @@ For copies of the Vial layout files, see the folder:
 For a GUI representation of the similar keymap I use on my ZSA Voyager keyboard, see:
 https://configure.zsa.io/voyager/layouts/jYDdw/latest/0
 
+For posts on my blog about my experiements with alternative keyboard layouts, see:
+https://www.teachmaths.org/tags/altkeyboardlayouts/
+
 # KBD firmware
 
 ## How to build
